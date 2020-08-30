@@ -1,0 +1,42 @@
+@import 'utils';
+
+body, html {
+    height: 100%;
+} // TODO get rid of this later
+
+body {
+    margin: 0;
+    font-family: $font;
+
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    grid-template-rows: 8% auto 10%;
+    grid-template-areas: 
+        "sidebar header header"
+        "sidebar main main"
+        "footer footer footer"
+    ;
+}
+
+aside {
+    grid-area: sidebar;
+    background-color: $coral-green;
+}
+
+header {
+    grid-area: header;
+    background-color: $green-blue;
+}
+
+main {
+    grid-area: main;
+    background-color: $coral-blue;
+}
+
+footer {
+    grid-area: footer;
+    background-color: $coral-purple;
+}
+
+
+@import 'responsive';
