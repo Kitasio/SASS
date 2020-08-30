@@ -10,7 +10,7 @@
 3. Change the grid of the body to your needs
 4. Define all the variable and functions in `_utils.scss` for the project
 
-## Grid tricks
+## Tricks
 * To make a responsive gallery like grid use this:
 ```
 main {
@@ -24,3 +24,4 @@ main {
     }
 }
 ```
+* To use dummy image use: `<img src="http://placehold.it/150x150">`
