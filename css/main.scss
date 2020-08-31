@@ -1,18 +1,21 @@
 @import 'utils';
+@import 'burger';
 
 body, html {
-    height: 100%;
+    height: 100vh;
 } // TODO get rid of this later
 
 body {
     margin: 0;
-    font-family: $font;
+    padding: 0;
+    box-sizing: border-box;
+    @include font;
 
     display: grid;
     grid-template-columns: 20% 70% 10%;
-    grid-template-rows: 8% auto 10%;
+    grid-template-rows: 10% auto 10%;
     grid-template-areas: 
-        "sidebar header header"
+        "nav nav nav"
         "sidebar main main"
         "footer footer footer"
     ;
@@ -20,22 +23,22 @@ body {
 
 aside {
     grid-area: sidebar;
-    background-color: $coral-green;
+    background-color: $color4;
 }
 
-header {
-    grid-area: header;
-    background-color: $green-blue;
+nav {
+    grid-area: nav;
+    background-color: $color2;
 }
 
 main {
     grid-area: main;
-    background-color: $coral-blue;
+    background-color: $color3;
 }
 
 footer {
     grid-area: footer;
-    background-color: $coral-purple;
+    background-color: $color4;
 }
 
 
